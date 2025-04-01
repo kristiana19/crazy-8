@@ -1,0 +1,4 @@
+.img {
+  float: center;
+  margin-right: 20px; /* Add right padding so that the text does not touch the image */
+}
