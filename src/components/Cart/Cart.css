@@ -1,0 +1,36 @@
+.cart-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  
+  .cart-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .cart-container li {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00b38f;
+  }
+  
