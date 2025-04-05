@@ -1,4 +1,4 @@
-import React from 'react'; // ⬅️ To dodaš na vrh!
+import React from 'react';
 import GameBoard from './GameBoard';
 import './App.css'; 
 
