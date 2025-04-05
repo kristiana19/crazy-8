@@ -5,6 +5,7 @@ const buttons = [
   { id: "two", icon: "/search.png" },
   { id: "three", icon: "/tictactoe.png" },
   { id: "four", icon: "/contactus.png" },
+  { id: "five", icon: "/contactus.png" },
 ];
 
 export default function Header({ onContentChange }) {
