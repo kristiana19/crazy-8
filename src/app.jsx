@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import GameCards from "./components/GameCards/gamecards";
 import Crazy from "./components/Crazy 8/Crazy";
 import ContactUs from "./components/Contacts/contacts";
-import Cart from "./components/Cart/cart";
+import Cart from "./components/Cart/Cart";
 
 
 export default function App() {
