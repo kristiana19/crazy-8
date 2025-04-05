@@ -1,0 +1,10 @@
+.maindiv{
+    align-items: center;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    
+} 

@@ -2,24 +2,21 @@
   height: 50px;
   display: flex;
   padding: 0 2rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  background: #fafafa;
+  background: #ebb6b6;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  background-color: #282c34;
-  color: white;
+  background-color: #4065ad;
+  color: rgb(255, 255, 255);
   padding: 10px;
-}
-body {
-  background-color: lightgrey; /* Replace with the desired color */
 }
 
 .img {
-  float: left;
+  float: center;
   margin-right: 20px; /* Add right margin so that the text does not touch the image */
 }

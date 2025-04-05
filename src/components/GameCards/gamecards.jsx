@@ -41,31 +41,23 @@ function ShoppingCartApp() {
 
   return (
     <div className="p-4">
-      {/* Header with store title */}
-      <h1
-        style={{
-          color: "orange",
-          textShadow: "2px 2px 4px black",
-          textAlign: "center",
-        }}
-      >
-        Igralna Trgovina
-      </h1>
+    
       {/* Search input field */}
-      <input
+
+      <div className="inputframe">
+      <input className="input"
         type="text"
         placeholder="Iskanje po imenu..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-full p-2 mb-2 border rounded-md"
       />
       {/* Category filter dropdown */}
       <select
+        className="input"
         value={categoryFilter}
         onChange={(e) => setCategoryFilter(e.target.value)}
-        className="w-full p-2 mb-4 border rounded-md"
       >
-        <option value="">Vse kategorije</option>
+        <option value="" className="text-gray-500">Vse kategorije</option>
         {categories.map((category, index) => (
           <option key={index} value={category}>
             {category}
@@ -73,45 +65,43 @@ function ShoppingCartApp() {
         ))}
       </select>
       {/* Price filter input */}
-      <input
+      <input className="input"
         type="number"
         placeholder="Najvišja cena"
         value={priceFilter}
         onChange={(e) => setPriceFilter(e.target.value)}
-        className="w-full px-3 py-2 mb-4 border rounded-md"
       />
       {/* Rating filter input */}
-      <input
+      <input className="input"
         type="number"
         placeholder="Najvišja ocena"
         value={ratingFilter}
         onChange={(e) => setRatingFilter(e.target.value)}
-        className="w-full px-3 py-2 mb-4 border rounded-md"
       />
+    </div>
 
-      <div className="space-y-6 flex flex-col items-center">
+      <div>
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="max-w-lg w-full border-2 border-gray-300 rounded-lg shadow-lg p-4 flex items-center gap-4 bg-white"
+              className="gameframe"
             >
               {/* Image block */}
-              <div className="w-32 h-32 flex-shrink-0 border border-gray-400 rounded-md overflow-hidden">
+              <div className="image">
                 <img
                   src={product.icon}
                   alt={product.name}
-                  className="w-full h-full object-contain"
+                  className="object-contain w-full h-full"
                   style={{
                     width: "300px",
                     height: "300px",
-                    cursor: "pointer",
-                    backgroundcolor: "transparent",
+                    margin: "50px",
                   }}
                 />
               </div>
               {/* Information block */}
-              <div className="flex-1">
+              <div className="textframe">
                 <h2 className="text-xl font-bold">{product.name}</h2>
                 <p className="text-gray-700">{product.description}</p>
                 <p>
@@ -136,28 +126,8 @@ function ShoppingCartApp() {
           <p className="text-center text-gray-600">Nič ni bilo najdeno</p>
         )}
       </div>
-      {/* Shopping cart section */}
-      <h2 className="text-xl font-semibold mt-6">Košarica</h2>
-      {cart.length === 0 ? (
-        <p className="text-gray-600">Košarica je prazna</p>
-      ) : (
-        <ul className="list-disc pl-6">
-          {cart.map((item) => (
-            <li
-              key={item.id}
-              className="flex justify-between items-center mb-2"
-            >
-              {item.name} — {item.price} € na dan
-              <button
-                onClick={() => removeFromCart(item.id)}
-                className="ml-2 p-1 bg-red-500 text-white rounded"
-              >
-                Izbriši
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      
     </div>
   );
 }
+

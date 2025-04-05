@@ -191,7 +191,7 @@ const GameBoard = () => {
       {winner && (
         <>
           <h3 className="winner-message">
-            🏆 {winner === 'You' ? 'Congratulations, you won!' : 'Computer wins this round!'} 🏆
+          <span role="img" aria-label="trophy">🏆</span> {winner === 'You' ? 'Congratulations, you won!' : 'Computer wins this round!'} <span role="img" aria-label="trophy">🏆</span>
           </h3>
           <button onClick={startGame}>Play Again</button>
         </>
