@@ -2,9 +2,10 @@ import Header from "./components/header";
 import React, { useState } from "react";
 import Head from "./components/Head";
 import Home from "./components/Home/Home";
-import TicTacToe from "./components/TicTacToe/TicTacToe";
 import GameCards from "./components/GameCards/gamecards";
+import Crazy from "./components/Crazy 8/Crazy";
 import ContactUs from "./components/Contacts/contacts";
+
 
 export default function App() {
   const [activeContent, setActiveContent] = useState(null);
@@ -24,7 +25,7 @@ export default function App() {
         {activeContent === "one" && <Home />}
         {activeContent === null && <Home />}
         {activeContent === "two" && <GameCards />}
-        {activeContent === "three" && <TicTacToe />}
+        {activeContent == "three" && <Crazy />}
         {activeContent === "four" && <ContactUs />}
       </main>
 

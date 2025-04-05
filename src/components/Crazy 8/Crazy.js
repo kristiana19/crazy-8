@@ -1,13 +1,13 @@
 import React from 'react'; // ⬅️ To dodaš na vrh!
-import GameBoard from './components/GameBoard';
+import GameBoard from './GameBoard';
 import './App.css'; 
 
-function App() {
+function Crazy() {
   return (
-    <div className="App">
+    <div className="Crazy">
       <GameBoard />
     </div>
   );
 }
 
-export default App;
+export default Crazy;

@@ -1,6 +1,6 @@
 // src/components/GameBoard.js
 import React, { useState, useEffect } from 'react';
-import { shuffleDeck, dealCards, isValidMove, getComputerMove } from '../utils/gameLogic';
+import { shuffleDeck, dealCards, isValidMove, getComputerMove } from './utils/gameLogic';
 import Hand from './Hand';
 import StatusBar from './StatusBar';
 
