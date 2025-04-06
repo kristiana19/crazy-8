@@ -1,0 +1,39 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* centriranje po višini */
+    text-align: center;
+    color: #009bb3;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    bbackground-color: rgba(255, 255, 255, 0.05);
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+  
+.profile-container ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 20px;
+}
+  
+.profile-container li {
+   padding: 10px;
+   font-size: 18px;
+}
+
+.profile-text {
+    color: #00eaff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }

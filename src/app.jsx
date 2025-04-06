@@ -6,6 +6,7 @@ import GameCards from "./components/GameCards/gamecards";
 import Crazy from "./components/Crazy 8/Crazy";
 import ContactUs from "./components/Contacts/contacts";
 import Cart from "./components/Cart/cart";
+import Profile from "./components/Profile/Profile";
 
 export default function App() {
   const [activeContent, setActiveContent] = useState(null);
@@ -30,6 +31,7 @@ export default function App() {
         {activeContent === "three" && <Crazy />}
         {activeContent === "four" && <ContactUs />}
         {activeContent === "five" && <Cart />}
+        {activeContent === "six" && <Profile />}
       </main>
 
       <footer style={{ width: "100%", position: "fixed", bottom: "0" }}>
