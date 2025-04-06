@@ -34,3 +34,13 @@
     background-color: #00b38f;
   }
   
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* centriranje po višini */
+    text-align: center;
+    color: #009bb3;
+    background-color: rgba(255, 255, 255, 0.05);
+  }

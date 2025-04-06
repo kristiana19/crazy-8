@@ -1,5 +1,7 @@
 import React from "react";
-import { useCart } from "../../context/CartContext";
+import { useCart } from './CartContext'
+import './Cart.css';
+
 
 export default function Cart() {
   const { cart, addToCart, removeFromCart } = useCart();
@@ -7,10 +9,11 @@ export default function Cart() {
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Košarica</h2>
-      {cart.length === 0 ? (
-        <p>Košarica je prazna</p>
+    <div>
+      <div className="cart-container">
+      <h2>🛒 Košarica</h2>
+        {cart.length === 0 ? (
+        <p>Vaša košarica je prazna.</p>
       ) : (
         <>
           {cart.map((item) => (
@@ -45,6 +48,8 @@ export default function Cart() {
           <p className="font-bold">Skupaj: {total.toFixed(2)} €</p>
         </>
       )}
+      <div>Skupaj: {total} €</div>
+      </div>
     </div>
   );
 }
