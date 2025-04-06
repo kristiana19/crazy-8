@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { products } from "../data";
+import { useCart } from "../Cart/CartContext";
 import "./gamecards.css";
 
 export default function GameCards() {
@@ -7,7 +8,7 @@ export default function GameCards() {
 }
 
 function ShoppingCartApp() {
-  const [cart, setCart] = useState([]);
+  const { addToCart } = useCart();
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
@@ -15,13 +16,9 @@ function ShoppingCartApp() {
 
   const categories = [...new Set(products.map((product) => product.category))];
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
+  const { cart } = useCart();
+console.log("Cart contents:", cart);
 
-  const removeFromCart = (id) => {
-    setCart(cart.filter((item) => item.id !== id));
-  };
   // Filter products based on search term, category, price, and rating
   const filteredProducts = products.filter((product) => {
     const matchesName = product.name
@@ -130,4 +127,3 @@ function ShoppingCartApp() {
     </div>
   );
 }
-

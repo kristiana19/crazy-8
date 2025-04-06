@@ -5,7 +5,9 @@ import Home from "./components/Home/Home";
 import GameCards from "./components/GameCards/gamecards";
 import Crazy from "./components/Crazy 8/Crazy";
 import ContactUs from "./components/Contacts/contacts";
-import Cart from "./components/Cart/cart";
+import { CartProvider } from './components/Cart/CartContext';
+import Cart from "./components/Cart/Cart";
+
 
 export default function App() {
   const [activeContent, setActiveContent] = useState(null);
@@ -15,6 +17,7 @@ export default function App() {
     setActiveContent(content);
   };
   return (
+    <CartProvider>
     <div className="Home">
       <Head />
       <header
@@ -26,10 +29,11 @@ export default function App() {
       <main>
         {activeContent === "one" && <Home />}
         {activeContent === null && <Home />}
-        {activeContent === "two" && <GameCards />}
+        {activeContent === "two" && (<GameCards />)}
         {activeContent === "three" && <Crazy />}
         {activeContent === "four" && <ContactUs />}
-        {activeContent === "five" && <Cart />}
+        {activeContent === "five" && (<Cart />)}
+
       </main>
 
       <footer style={{ width: "100%", position: "fixed", bottom: "0" }}>
@@ -49,5 +53,6 @@ export default function App() {
         </div>
       </footer>
     </div>
+    </CartProvider>
   );
 }
