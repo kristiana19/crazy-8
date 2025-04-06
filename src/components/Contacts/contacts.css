@@ -10,3 +10,62 @@
 div {
   align-items: center;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 20px;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00eaff;
+}
+
+.contact-card label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #eee;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.contact-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00eaff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-card button:hover {
+  background-color: #00c5d1;
+}

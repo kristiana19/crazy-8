@@ -1,5 +1,7 @@
 import React from "react";
 import { useCart } from './CartContext'
+import './Cart.css';
+
 
 export default function Cart() {
   const { cart } = useCart();
@@ -8,8 +10,9 @@ export default function Cart() {
 
   return (
     <div>
-      <h2>Košarica</h2>
-      {cart.length === 0 ? (
+      <div className="cart-container">
+      <h2>🛒 Košarica</h2>
+        {cart.length === 0 ? (
         <p>Vaša košarica je prazna.</p>
       ) : (
         <ul>
@@ -21,6 +24,7 @@ export default function Cart() {
         </ul>
       )}
       <div>Skupaj: {total} €</div>
+      </div>
     </div>
   );
 }

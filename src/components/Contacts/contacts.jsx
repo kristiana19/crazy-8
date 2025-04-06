@@ -34,10 +34,10 @@ function ContactUs() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="contact-container"> {/* To je glavni centriran okvir */}
       <div className="max-w-lg w-full p-6 bg-white rounded-md shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-center">Obrnite se</h2>
-
+        <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">Obrnite se</h2>
+  
         {submitted ? (
           <p className="text-green-600 text-center">
             Hvala! Vaše sporočilo je bilo poslano.
@@ -57,10 +57,9 @@ function ContactUs() {
                 required
               ></textarea>
             </div>
-
-            {/* Display error if any*/}
+  
             {error && <p className="text-red-600">{error}</p>}
-
+  
             <div>
               <label className="block text-gray-700">Ime:</label>
               <input
@@ -69,15 +68,9 @@ function ContactUs() {
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite svoje ime"
-                style={{
-                  marginLeft: "36px",
-                  paddingLeft: "10px",
-                  paddingRight: "10px",
-                  border: "1px solid #ccc",
-                  borderRadius: "5px",
-                }}
               />
             </div>
+  
             <div>
               <label className="block text-gray-700">Email:</label>
               <input
@@ -86,15 +79,9 @@ function ContactUs() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite vaš email"
-                style={{
-                  marginLeft: "25px",
-                  paddingLeft: "10px",
-                  paddingRight: "10px",
-                  border: "1px solid #ccc",
-                  borderRadius: "5px",
-                }}
               />
             </div>
+  
             <div>
               <label className="block text-gray-700">Telefon:</label>
               <input
@@ -103,15 +90,9 @@ function ContactUs() {
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite svojo telefonsko številko"
-                style={{
-                  marginLeft: "12px",
-                  paddingLeft: "10px",
-                  paddingRight: "10px",
-                  border: "1px solid #ccc",
-                  borderRadius: "5px",
-                }}
               />
             </div>
+  
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
