@@ -63,8 +63,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# 🃏 Crazy 8 - Multiplayer Card Game (React)
+
+A simple yet dynamic online version of the classic card game **Crazy 8**, developed as part of a team project. Built with **React.js and JavaScript** and styled with custom CSS.
+
+> 🎮 “Be the first to get rid of all your cards – but watch out for wild 8s, draw-2s and skipped turns!”
+
+---
+
+## 🚀 Features
+
+- 🔄 **Real-time turn-based gameplay** (player vs computer)
+- 🧠 **Simple AI opponent** with random decision-making
+- ♠️ **Special cards logic**: 
+  - `8` – wild card (choose a new suit)
+  - `2` – forces opponent to draw two
+  - `A` – skip opponent’s turn
+- 🎨 **Interactive UI** with hover effects and dynamic styling
+- 🏆 **Win detection**, end game screen and restart option
+
+---
+
+## 👩‍💻 Developer Role
+
+This game was implemented by **Kristijana** as part of a team collaboration.  
+My responsibilities included:
+- Full frontend development in JavaScript and React
+- Implementation of game logic, card validation and special effects
+- UI design and CSS styling
+- Managing game state and player interactions
+
+---
+
+## 🛠️ Technologies Used
+
+| Tech        | Purpose                        |
+|-------------|--------------------------------|
+| React.js    | Frontend framework             |
+| CSS         | Styling and layout             |
+| JavaScript  | Game logic                     |
+| useState / useEffect | State management in React |
+
+
+
+### npm start :)
+
