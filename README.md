@@ -108,6 +108,3 @@ My responsibilities included:
 | useState / useEffect | State management in React |
 
 
-
-### npm start :)
-
