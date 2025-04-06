@@ -11,14 +11,40 @@ div {
   align-items: center;
 }
 
+
+.contact-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+  
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+  
+.contact-container li {
+  padding: 10px;
+  font-size: 18px;
+}
+
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  padding: 20px;
+  height: 80vh; /* centriranje po višini */
+  text-align: center;
+  color: #009bb3;
+  background-color: rgba(255, 255, 255, 0.05);
 }
+
 
 .contact-card {
   background-color: rgba(255, 255, 255, 0.1);
