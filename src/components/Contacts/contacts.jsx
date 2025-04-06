@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./contacts.css"
 
 function ContactUs() {
   // States for form fields
