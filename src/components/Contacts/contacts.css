@@ -11,10 +11,18 @@ div {
   align-items: center;
 }
 
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00eaff; 
+  margin-bottom: 6px;
+  display: block;
+}
+
 
 .contact-container {
   max-width: 600px;
-  margin: 60px auto;
+  margin: 70px auto;
   padding: 30px;
   background-color: white;
   color: #333;

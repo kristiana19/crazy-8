@@ -36,7 +36,7 @@ function ContactUs() {
 return (
   <div className="contact-container"> 
     <div className="max-w-lg w-full p-6 bg-white rounded-md shadow-lg">
-      <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">Obrnite se</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">📥Obrnite se</h2>
 
       {submitted ? (
         <p className="text-green-600 text-center">
@@ -45,13 +45,13 @@ return (
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-700">
-              Sporočilo <span className="text-red-600">*</span>:
+            <label className="label">
+              Sporočilo <span className="text-red-600">💬</span>:
             </label>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner hover:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200"
               placeholder="Vnesite svoje sporočilo"
               rows="4"
               required
@@ -61,34 +61,34 @@ return (
           {error && <p className="text-red-600">{error}</p>}
 
           <div>
-            <label className="block text-gray-700">Ime:</label>
+            <label className="label">🧑Ime:</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner hover:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200"
               placeholder="Vnesite svoje ime"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700">Email:</label>
+            <label className="label">📧Email:</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner hover:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200"
               placeholder="Vnesite vaš email"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700">Telefon:</label>
+            <label className="label">📱Telefon:</label>
             <input
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner hover:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200"
               placeholder="Vnesite svojo telefonsko številko"
             />
           </div>
