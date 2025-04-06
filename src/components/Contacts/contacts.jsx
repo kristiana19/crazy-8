@@ -38,7 +38,9 @@ function ContactUs() {
         <h2 className="text-2xl font-bold mb-4 text-center">Obrnite se</h2>
 
         {submitted ? (
-          <p className="text-green-600 text-center">Hvala! Vaše sporočilo je bilo poslano.</p>
+          <p className="text-green-600 text-center">
+            Hvala! Vaše sporočilo je bilo poslano.
+          </p>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -57,6 +59,7 @@ function ContactUs() {
 
             {/* Display error if any*/}
             {error && <p className="text-red-600">{error}</p>}
+
             <div>
               <label className="block text-gray-700">Ime:</label>
               <input
@@ -65,6 +68,13 @@ function ContactUs() {
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite svoje ime"
+                style={{
+                  marginLeft: "36px",
+                  paddingLeft: "10px",
+                  paddingRight: "10px",
+                  border: "1px solid #ccc",
+                  borderRadius: "5px",
+                }}
               />
             </div>
             <div>
@@ -75,6 +85,13 @@ function ContactUs() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite vaš email"
+                style={{
+                  marginLeft: "25px",
+                  paddingLeft: "10px",
+                  paddingRight: "10px",
+                  border: "1px solid #ccc",
+                  borderRadius: "5px",
+                }}
               />
             </div>
             <div>
@@ -85,6 +102,13 @@ function ContactUs() {
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full px-3 py-2 border rounded-md"
                 placeholder="Vnesite svojo telefonsko številko"
+                style={{
+                  marginLeft: "12px",
+                  paddingLeft: "10px",
+                  paddingRight: "10px",
+                  border: "1px solid #ccc",
+                  borderRadius: "5px",
+                }}
               />
             </div>
             <button
